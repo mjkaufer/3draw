@@ -1,0 +1,26 @@
+/* CSS declarations go here */
+/*#ex1Slider .slider-selection {*/
+/*	background: #BABABA;*/
+/*}*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+body{
+    color:#fff;
+    background-color:#000;
+}
+
+#slide{
+ /*   position : absolute;*/
+	/*top : 2000px;*/
+	/*left : 45px;*/
+	/*-webkit-transform:rotate(90deg);*/
+
+}
+
+.Absolute-Center{
+  margin: auto;
+  position: absolute;
+}
+  
