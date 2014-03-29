@@ -1998,3 +1998,508 @@ client/3draw.css: property missing value near line 15:17
 [34mI20140329-17:48:35.493(-4)? [39m** for each collection that you want clients to see.
 [34mI20140329-17:48:35.493(-4)? [39m
 => Meteor server restarted
+[34mI20140329-17:57:20.450(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-17:57:20.455(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-17:57:20.456(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-17:57:20.456(-4)? [39m** will still be sent to all clients.
+[34mI20140329-17:57:20.456(-4)? [39m**
+[34mI20140329-17:57:20.456(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-17:57:20.456(-4)? [39m**
+[34mI20140329-17:57:20.456(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-17:57:20.458(-4)? [39m**
+[34mI20140329-17:57:20.458(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-17:57:20.458(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-17:57:20.458(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-17:58:35.507(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-17:58:35.513(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-17:58:35.513(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-17:58:35.513(-4)? [39m** will still be sent to all clients.
+[34mI20140329-17:58:35.513(-4)? [39m**
+[34mI20140329-17:58:35.513(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-17:58:35.513(-4)? [39m**
+[34mI20140329-17:58:35.514(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-17:58:35.514(-4)? [39m**
+[34mI20140329-17:58:35.514(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-17:58:35.514(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-17:58:35.514(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-17:58:55.057(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-17:58:55.063(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-17:58:55.063(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-17:58:55.063(-4)? [39m** will still be sent to all clients.
+[34mI20140329-17:58:55.063(-4)? [39m**
+[34mI20140329-17:58:55.063(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-17:58:55.063(-4)? [39m**
+[34mI20140329-17:58:55.063(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-17:58:55.064(-4)? [39m**
+[34mI20140329-17:58:55.064(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-17:58:55.064(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-17:58:55.064(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:00:00.539(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:00:00.545(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:00:00.546(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:00:00.546(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:00:00.546(-4)? [39m**
+[34mI20140329-18:00:00.548(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:00:00.549(-4)? [39m**
+[34mI20140329-18:00:00.550(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:00:00.553(-4)? [39m**
+[34mI20140329-18:00:00.553(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:00:00.553(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:00:00.553(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:00:52.090(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:00:52.097(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:00:52.098(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:00:52.098(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:00:52.098(-4)? [39m**
+[34mI20140329-18:00:52.098(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:00:52.098(-4)? [39m**
+[34mI20140329-18:00:52.098(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:00:52.099(-4)? [39m**
+[34mI20140329-18:00:52.099(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:00:52.099(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:00:52.099(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:01:08.670(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:01:08.676(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:01:08.677(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:01:08.677(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:01:08.677(-4)? [39m**
+[34mI20140329-18:01:08.677(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:01:08.677(-4)? [39m**
+[34mI20140329-18:01:08.677(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:01:08.678(-4)? [39m**
+[34mI20140329-18:01:08.678(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:01:08.678(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:01:08.678(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:01:12.161(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:01:12.165(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:01:12.169(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:01:12.169(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:01:12.169(-4)? [39m**
+[34mI20140329-18:01:12.169(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:01:12.169(-4)? [39m**
+[34mI20140329-18:01:12.170(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:01:12.170(-4)? [39m**
+[34mI20140329-18:01:12.170(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:01:12.170(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:01:12.170(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:01:16.242(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:01:16.249(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:01:16.249(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:01:16.249(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:01:16.249(-4)? [39m**
+[34mI20140329-18:01:16.250(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:01:16.250(-4)? [39m**
+[34mI20140329-18:01:16.250(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:01:16.250(-4)? [39m**
+[34mI20140329-18:01:16.250(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:01:16.254(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:01:16.254(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:01:45.371(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:01:45.377(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:01:45.378(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:01:45.378(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:01:45.378(-4)? [39m**
+[34mI20140329-18:01:45.378(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:01:45.378(-4)? [39m**
+[34mI20140329-18:01:45.378(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:01:45.378(-4)? [39m**
+[34mI20140329-18:01:45.378(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:01:45.379(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:01:45.379(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:01:51.175(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:01:51.181(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:01:51.181(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:01:51.181(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:01:51.182(-4)? [39m**
+[34mI20140329-18:01:51.182(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:01:51.182(-4)? [39m**
+[34mI20140329-18:01:51.182(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:01:51.182(-4)? [39m**
+[34mI20140329-18:01:51.182(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:01:51.182(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:01:51.190(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:01:57.652(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:01:57.658(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:01:57.658(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:01:57.658(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:01:57.658(-4)? [39m**
+[34mI20140329-18:01:57.658(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:01:57.658(-4)? [39m**
+[34mI20140329-18:01:57.661(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:01:57.662(-4)? [39m**
+[34mI20140329-18:01:57.662(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:01:57.662(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:01:57.662(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:03:12.732(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:03:12.738(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:03:12.738(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:03:12.739(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:03:12.739(-4)? [39m**
+[34mI20140329-18:03:12.739(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:03:12.739(-4)? [39m**
+[34mI20140329-18:03:12.739(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:03:12.739(-4)? [39m**
+[34mI20140329-18:03:12.739(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:03:12.739(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:03:12.740(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:03:27.284(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:03:27.289(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:03:27.289(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:03:27.289(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:03:27.290(-4)? [39m**
+[34mI20140329-18:03:27.290(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:03:27.290(-4)? [39m**
+[34mI20140329-18:03:27.290(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:03:27.290(-4)? [39m**
+[34mI20140329-18:03:27.290(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:03:27.290(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:03:27.290(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:03:59.054(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:03:59.061(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:03:59.061(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:03:59.061(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:03:59.061(-4)? [39m**
+[34mI20140329-18:03:59.062(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:03:59.062(-4)? [39m**
+[34mI20140329-18:03:59.062(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:03:59.062(-4)? [39m**
+[34mI20140329-18:03:59.062(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:03:59.062(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:03:59.063(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:04:52.334(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:04:52.341(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:04:52.341(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:04:52.341(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:04:52.341(-4)? [39m**
+[34mI20140329-18:04:52.341(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:04:52.342(-4)? [39m**
+[34mI20140329-18:04:52.342(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:04:52.342(-4)? [39m**
+[34mI20140329-18:04:52.342(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:04:52.342(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:04:52.342(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:05:06.847(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:05:06.853(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:05:06.853(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:05:06.854(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:05:06.854(-4)? [39m**
+[34mI20140329-18:05:06.854(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:05:06.854(-4)? [39m**
+[34mI20140329-18:05:06.854(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:05:06.854(-4)? [39m**
+[34mI20140329-18:05:06.854(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:05:06.855(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:05:06.855(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:05:18.803(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:05:18.809(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:05:18.809(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:05:18.809(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:05:18.809(-4)? [39m**
+[34mI20140329-18:05:18.809(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:05:18.810(-4)? [39m**
+[34mI20140329-18:05:18.810(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:05:18.810(-4)? [39m**
+[34mI20140329-18:05:18.810(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:05:18.810(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:05:18.810(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:06:35.338(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:06:35.345(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:06:35.345(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:06:35.346(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:06:35.346(-4)? [39m**
+[34mI20140329-18:06:35.346(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:06:35.346(-4)? [39m**
+[34mI20140329-18:06:35.346(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:06:35.347(-4)? [39m**
+[34mI20140329-18:06:35.347(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:06:35.347(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:06:35.347(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:06:54.914(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:06:54.920(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:06:54.921(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:06:54.921(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:06:54.921(-4)? [39m**
+[34mI20140329-18:06:54.921(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:06:54.921(-4)? [39m**
+[34mI20140329-18:06:54.921(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:06:54.921(-4)? [39m**
+[34mI20140329-18:06:54.921(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:06:54.922(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:06:54.922(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:08:06.841(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:08:06.847(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:08:06.847(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:08:06.848(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:08:06.848(-4)? [39m**
+[34mI20140329-18:08:06.848(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:08:06.848(-4)? [39m**
+[34mI20140329-18:08:06.848(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:08:06.848(-4)? [39m**
+[34mI20140329-18:08:06.848(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:08:06.854(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:08:06.855(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:08:31.889(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:08:31.895(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:08:31.895(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:08:31.895(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:08:31.896(-4)? [39m**
+[34mI20140329-18:08:31.896(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:08:31.896(-4)? [39m**
+[34mI20140329-18:08:31.896(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:08:31.896(-4)? [39m**
+[34mI20140329-18:08:31.899(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:08:31.899(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:08:31.899(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:09:37.099(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:09:37.105(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:09:37.105(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:09:37.105(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:09:37.106(-4)? [39m**
+[34mI20140329-18:09:37.106(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:09:37.106(-4)? [39m**
+[34mI20140329-18:09:37.106(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:09:37.106(-4)? [39m**
+[34mI20140329-18:09:37.106(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:09:37.106(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:09:37.106(-4)? [39m
+=> Meteor server restarted
+=> Errors prevented startup:
+
+While building the application:
+client/3draw.html:32: Expected attribute name in tag
+...     <input class="" </div>     </div>
+                        ^
+
+=> Your application has errors. Waiting for file change.
+=> Modified -- restarting.
+[34mI20140329-18:10:47.087(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:10:47.090(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:10:47.091(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:10:47.091(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:10:47.092(-4)? [39m**
+[34mI20140329-18:10:47.093(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:10:47.094(-4)? [39m**
+[34mI20140329-18:10:47.094(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:10:47.096(-4)? [39m**
+[34mI20140329-18:10:47.097(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:10:47.097(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:10:47.100(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:10:52.039(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:10:52.045(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:10:52.045(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:10:52.045(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:10:52.045(-4)? [39m**
+[34mI20140329-18:10:52.045(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:10:52.046(-4)? [39m**
+[34mI20140329-18:10:52.046(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:10:52.046(-4)? [39m**
+[34mI20140329-18:10:52.046(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:10:52.046(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:10:52.046(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:10:57.642(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:10:57.648(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:10:57.648(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:10:57.648(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:10:57.648(-4)? [39m**
+[34mI20140329-18:10:57.648(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:10:57.649(-4)? [39m**
+[34mI20140329-18:10:57.650(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:10:57.650(-4)? [39m**
+[34mI20140329-18:10:57.650(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:10:57.650(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:10:57.650(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:11:21.388(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:11:21.394(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:11:21.394(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:11:21.394(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:11:21.394(-4)? [39m**
+[34mI20140329-18:11:21.394(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:11:21.397(-4)? [39m**
+[34mI20140329-18:11:21.398(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:11:21.398(-4)? [39m**
+[34mI20140329-18:11:21.398(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:11:21.398(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:11:21.402(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:11:37.695(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:11:37.701(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:11:37.702(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:11:37.702(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:11:37.702(-4)? [39m**
+[34mI20140329-18:11:37.702(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:11:37.702(-4)? [39m**
+[34mI20140329-18:11:37.702(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:11:37.703(-4)? [39m**
+[34mI20140329-18:11:37.703(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:11:37.703(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:11:37.704(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:12:25.708(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:12:25.713(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:12:25.713(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:12:25.714(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:12:25.714(-4)? [39m**
+[34mI20140329-18:12:25.714(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:12:25.714(-4)? [39m**
+[34mI20140329-18:12:25.714(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:12:25.714(-4)? [39m**
+[34mI20140329-18:12:25.714(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:12:25.714(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:12:25.717(-4)? [39m
+=> Meteor server restarted
+=> Errors prevented startup:
+
+While building the application:
+client/3draw.html:30: Expected "div" end tag
+...id="slider1"></input>     <input type="te...
+                        ^
+
+=> Your application has errors. Waiting for file change.
+=> Modified -- restarting.
+=> Errors prevented startup:
+
+While building the application:
+client/3draw.html:29: Expected "div" end tag
+...id="slider1"></input>  </div>
+                        ^
+
+=> Your application has errors. Waiting for file change.
+=> Modified -- restarting.
+[34mI20140329-18:13:22.770(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:13:22.772(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:13:22.772(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:13:22.773(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:13:22.774(-4)? [39m**
+[34mI20140329-18:13:22.775(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:13:22.775(-4)? [39m**
+[34mI20140329-18:13:22.776(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:13:22.777(-4)? [39m**
+[34mI20140329-18:13:22.778(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:13:22.779(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:13:22.779(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:13:35.774(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:13:35.780(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:13:35.780(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:13:35.780(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:13:35.782(-4)? [39m**
+[34mI20140329-18:13:35.782(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:13:35.782(-4)? [39m**
+[34mI20140329-18:13:35.782(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:13:35.782(-4)? [39m**
+[34mI20140329-18:13:35.787(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:13:35.787(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:13:35.787(-4)? [39m
+=> Meteor server restarted
+=> Errors prevented startup:
+
+While building the application:
+client/3draw.html:31: Expected space
+...  <input class="text"id="keyInput"/> </di...
+                        ^
+
+=> Your application has errors. Waiting for file change.
+=> Modified -- restarting.
+=> Errors prevented startup:
+
+While building the application:
+client/3draw.html:31: Expected space
+...  <input class="text"id="keyInput"/> </di...
+                        ^
+
+=> Your application has errors. Waiting for file change.
+=> Modified -- restarting.
+=> Errors prevented startup:
+
+While building the application:
+client/3draw.html:30: Expected "div" end tag
+...id="slider1"></input>     <input class="t...
+                        ^
+
+=> Your application has errors. Waiting for file change.
+=> Modified -- restarting.
+=> Errors prevented startup:
+
+While building the application:
+client/3draw.html:30: Expected "div" end tag
+...id="slider1"></input>     <input class="t...
+                        ^
+
+=> Your application has errors. Waiting for file change.
+=> Modified -- restarting.
+[34mI20140329-18:15:53.318(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:15:53.321(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:15:53.322(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:15:53.322(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:15:53.323(-4)? [39m**
+[34mI20140329-18:15:53.323(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:15:53.325(-4)? [39m**
+[34mI20140329-18:15:53.326(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:15:53.328(-4)? [39m**
+[34mI20140329-18:15:53.329(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:15:53.329(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:15:53.331(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:16:13.527(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:16:13.528(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:16:13.528(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:16:13.532(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:16:13.532(-4)? [39m**
+[34mI20140329-18:16:13.532(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:16:13.532(-4)? [39m**
+[34mI20140329-18:16:13.533(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:16:13.533(-4)? [39m**
+[34mI20140329-18:16:13.533(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:16:13.533(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:16:13.533(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:16:35.351(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:16:35.353(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:16:35.353(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:16:35.353(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:16:35.353(-4)? [39m**
+[34mI20140329-18:16:35.353(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:16:35.354(-4)? [39m**
+[34mI20140329-18:16:35.354(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:16:35.354(-4)? [39m**
+[34mI20140329-18:16:35.354(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:16:35.354(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:16:35.354(-4)? [39m
+=> Meteor server restarted
+[34mI20140329-18:18:04.530(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20140329-18:18:04.530(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20140329-18:18:04.530(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20140329-18:18:04.531(-4)? [39m** will still be sent to all clients.
+[34mI20140329-18:18:04.531(-4)? [39m**
+[34mI20140329-18:18:04.531(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20140329-18:18:04.531(-4)? [39m**
+[34mI20140329-18:18:04.531(-4)? [39m**   $ meteor remove autopublish
+[34mI20140329-18:18:04.531(-4)? [39m**
+[34mI20140329-18:18:04.531(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20140329-18:18:04.531(-4)? [39m** for each collection that you want clients to see.
+[34mI20140329-18:18:04.532(-4)? [39m
+=> Meteor server restarted

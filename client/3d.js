@@ -18,14 +18,17 @@ THREE;
     Handlebars.registerHelper('makeKey', function(){
        
        var x = Math.random().toString(36).substring(10).toUpperCase(); 
-       Session.set('key', x);
-       return Session.get('key');
+       Session.set('compKey', x);
+       return Session.get('compKey');
         
     });
 
     $(function(){
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+        {
+            Session.set('mobKey', null);
             return;
+        }
         console.log('potato');
       init();
 	  animate();  
@@ -47,7 +50,7 @@ THREE;
 				line.geometry.vertices[1] = ret;
 				particle.position = line.geometry.vertices[1];
 				console.log(ret);
-				// console.log("△T: " + (new Date().getTime() - x));
+				// console.log("â–³T: " + (new Date().getTime() - x));
 				// console.log(ret);
 				// return ret;
 				
@@ -207,7 +210,10 @@ THREE;
 
   
   window.addEventListener("deviceorientation", function(){
-    sendData(event);
+    event.key = Session.get('mobKey');
+    if(event.key != null)
+        sendData(event);
+    
   }, true);
   
   
@@ -228,6 +234,7 @@ $(function(){
   orientationStream.on('message', function(message) {
     // if(Session.get('allowMessage'))
     console.log(message);
+    if(Session.get('compKey') == Session.get('mobKey'))
     parseEvent(message);
   });
 })
