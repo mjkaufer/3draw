@@ -1,60 +1,45 @@
 <head>
-  <title>3draw</title>
+    <title>3draw</title>
 </head>
 
 <body>
- {{#if isMobile}}
-    {{> mobile}}
-  {{else}}
-  <div style="position:fixed;">
-  <!--<h1>Hello World!</h1>-->
-  <!--{{greeting}}-->
-  <!--<input type="button" value="Click" />-->
-    {{> computer}}
-  
-  </div>
-  
-  {{/if}}
-    
-    
+    {{#if isMobile}} {{> mobile}} {{else}}
+    <div style="position:fixed;">
+        <!--<h1>Hello World!</h1>-->
+        <!--{{greeting}}-->
+        <!--<input type="button" value="Click" />-->
+        {{> computer}}
+
+    </div>
+    {{/if}}
 </body>
 
+<template name="mobile">
+    <div class="container">
+        <br>
+        <div class="well">
+            <form role="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Key</label>
+                    <input type="text" class="form-control" id="keyInp" placeholder="KEY">
+                </div>
+                <button id="keyBut" class="btn btn-success" style="width: 100%" type = "button">Update Key</button>
+            </form>
+        </div>
 
-
-<template name = "mobile">
-<div class="container">
-  
-  <br> <br>
-  
-  <input class="slide" type="range" min="-5" max="5" id="magSlider">
-  <input type="text" id="keyInp">
-  <div id = "buttons">
-    <button id="keyBut" class = "button">Update Key</button>
-    <button id="clearBut" class = "button">Clear Stuff</button>
-    <button id="stopBut" class = "button">Toggle Break</button>
-  </div>
-  
-  <p>{{stopped}}</p>
-    
-
-   
-</div>
-</template>
-
-
-<template name = "computer">
-    <p>{{makeKey}}</p>
-    <div id="renderSpace">
-        
-        
+        <button id="magBut" class="btn btn-primary" style="width: 49%" type = "button">Stop</button>
+        <button id="stopBut" class="btn btn-primary" style="width: 49%" type = "button">Toggle Break</button>
+        <button id="clearBut" class="btn btn-danger" style="width: 100%" type = "button">Clear Stuff</button>
+        <div class="center">
+            <input type="range" min=-5 max=5 value=1 step="any" orient=vertical id="magSlider">
+        </div>
     </div>
-    
-    
-
 </template>
 
-
-
+<template name="computer">
+  <h1>{{makeKey}}</h1>
+    <div id="renderSpace"></div>
+</template>
 
 
 

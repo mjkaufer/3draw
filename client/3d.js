@@ -83,8 +83,8 @@ THREE;
         else if(stopped == 0){
 
          drawGeo = new THREE.Geometry();
-         drawGeo.vertices.push(new THREE.Vector3());
-         drawGeo.vertices.push(new THREE.Vector3());
+         drawGeo.vertices.push(n);
+         drawGeo.vertices.push(n);
 
          drawLine = new THREE.Line(drawGeo, new THREE.LineBasicMaterial({color: 0x77FF77}));
          drawLine.material.linewidth = 10;
@@ -214,7 +214,8 @@ THREE;
 				//var planeH = 50; // pixels 
 				//var numW = 50; // how many wide (50*50 = 2500 pixels wide)
 				//var numH = 50; // how many tall (50*50 = 2500 pixels tall)
-				//var plane = new THREE.Mesh( new THREE.PlaneGeometry( planeW*50, planeH*50, planeW, planeH ), new   THREE.MeshBasicMaterial( { color: 0xffffff, wireframe: true, wireframeLinewidth: 0.1} ) );
+				//var plane = new THREE.Mesh( new THREE.PlaneGeometry( planeW*50, planeH*50, planeW, planeH ), new   THREE.MeshBasicMaterial( 
+        //{ color: 0xffffff, wireframe: true, wireframeLinewidth: 0.1} ) );
 				//scene.add(plane);
 
 				group.add(line);
