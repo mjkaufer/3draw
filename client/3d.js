@@ -312,8 +312,7 @@ THREE;
     
     event.ralpha = event.alpha - relCoords.alpha;
     event.rbeta = event.beta - relCoords.beta;
-    var x = Math.round(lastCoords.alpha * 100) / 100 + "\n" + Math.round(lastCoords.beta * 100) / 100 + "\n" + Math.round(event.ralpha * 100) / 100 + "\n" + Math.round(event.rbeta * 100) / 100;
-    $('#calput').text(x);
+   
     //relative coords
     if(Session.get('stop') == 0)
       Session.set('stop', 1);    
