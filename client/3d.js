@@ -22,6 +22,11 @@ THREE;
   var tm = 5;
   var posPart;
 
+  var lastCoords;
+  var relCoords = {alpha:0,beta:0};
+
+  var count = true;
+
   
 
 
@@ -59,7 +64,7 @@ THREE;
             function parseEvent(e){
                 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
                     return;
-                applyRotation(e.alpha * Math.PI / 180, e.beta * Math.PI / 180, 0, /*e.gamma * Math.PI / 180*/e.mag, e.stopped);
+                applyRotation(e.ralpha * Math.PI / 180, e.rbeta * Math.PI / 180, 0, /*e.gamma * Math.PI / 180*/e.mag, e.stopped);
                 
             }
 
@@ -294,8 +299,22 @@ THREE;
     event.mag = $("#magSlider").val();
     event.stopped = Session.get('stop');
     $('#magInt').text(event.mag);
-
-
+    
+    lastCoords = {alpha:event.alpha,beta:event.beta};
+    if(count)//first time
+    {
+     count = false;
+      relCoords = {alpha:-90 + event.alpha, beta:-90 + event.beta};
+    }
+      
+    
+    //lastCoords, relCoords
+    
+    event.ralpha = event.alpha - relCoords.alpha;
+    event.rbeta = event.beta - relCoords.beta;
+    var x = Math.round(lastCoords.alpha * 100) / 100 + "\n" + Math.round(lastCoords.beta * 100) / 100 + "\n" + Math.round(event.ralpha * 100) / 100 + "\n" + Math.round(event.rbeta * 100) / 100;
+    $('#calput').text(x);
+    //relative coords
     if(Session.get('stop') == 0)
       Session.set('stop', 1);    
     
@@ -353,6 +372,10 @@ Template.mobile.events = {
   },
   'click #magBut': function(){
     $('#magSlider').val(0);
+  },
+  'click #calBut': function(){
+    relCoords.alpha = -90 + lastCoords.alpha;
+    relCoords.beta = -90 + lastCoords.beta;
   }
     
 }
