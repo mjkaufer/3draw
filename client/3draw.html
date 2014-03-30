@@ -31,13 +31,14 @@
         <button id="stopBut" class="btn btn-primary" style="width: 49%" type = "button">Toggle Break</button>
         <button id="clearBut" class="btn btn-danger" style="width: 100%" type = "button">Clear Stuff</button>
         <div class="center">
-            <input type="range" min=-5 max=5 value=1 step="any" orient=vertical id="magSlider">
+            <input type="range" min=-5 max=5 value=1 step=1 orient=vertical id="magSlider">
         </div>
+        <p id="magInt"></p>
     </div>
 </template>
 
 <template name="computer">
-  <h1>{{makeKey}}</h1>
+  <p>Connect to {{makeKey}}</p>
     <div id="renderSpace"></div>
 </template>
 
