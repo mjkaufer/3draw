@@ -20,18 +20,13 @@ THREE;
   var drawLine;
   var pos = new THREE.Vector3();
   var tm = 5;
+  var posPart;
+
+  
 
 
   
-      $('#slider1').change(function(){
-				console.log($('#slider1').val());
-        //alert($('#slider1').val());
-				tm = parseInt($('#slider1').val());
-        
-        
-
-			});
-
+      
 
     Handlebars.registerHelper('makeKey', function(){
        
@@ -41,11 +36,16 @@ THREE;
         
     });
 
+    Handlebars.registerHelper('stopped', function(){
+      return Session.get('stop');
+    });
+
     $(function(){
       Session.set('mag', 5);
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
         {
             Session.set('mobKey', null);
+            Session.set('stop', 1);//-1 means stopped, 0 means just toggled, 1 means not stopped
             return;
         }
         console.log('potato');
@@ -59,16 +59,18 @@ THREE;
             function parseEvent(e){
                 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
                     return;
-                applyRotation(e.alpha * Math.PI / 180, e.beta * Math.PI / 180, 0, /*e.gamma * Math.PI / 180*/e.mag);
+                applyRotation(e.alpha * Math.PI / 180, e.beta * Math.PI / 180, 0, /*e.gamma * Math.PI / 180*/e.mag, e.stopped);
+                
             }
 
-			function applyRotation(a,b,c,d){//ret is the actual Vector3
+			function applyRotation(a,b,c,d, stopped){//ret is the actual Vector3
         if(!d)
           d = 5; 
 				// var x = new Date().getTime();
 				var ret = new THREE.Vector3(mag, 0, 0);
 				ret.applyEuler(new THREE.Euler(c,a,b,'XYZ'));
 				line.geometry.vertices[1] = ret;
+        
 				particle.position = line.geometry.vertices[1];
         var desired = new THREE.Vector3();
         desired.copy(ret);
@@ -76,14 +78,23 @@ THREE;
         pos.add(desired);
         var n = new THREE.Vector3();
         n.copy(pos);
-        drawGeo.vertices.push(n);
+        if(stopped == 1)
+          drawGeo.vertices.push(n);
+        else if(stopped == 0){
+
+         drawGeo = new THREE.Geometry();
+         drawGeo.vertices.push(new THREE.Vector3());
+         drawGeo.vertices.push(new THREE.Vector3());
+
+         drawLine = new THREE.Line(drawGeo, new THREE.LineBasicMaterial({color: 0x77FF77}));
+         drawLine.material.linewidth = 10;
+         drawGroup.add(drawLine);
+
+        }
+        //if it's -1, do nothing
         
+        posPart.position = n;
         
-				//console.log(ret);
-				// console.log("Ã¢â€“Â³T: " + (new Date().getTime() - x));
-				// console.log(ret);
-				// return ret;
-				
 				return ret;
 				
 			}
@@ -143,6 +154,12 @@ THREE;
 					}
 
 				} );
+        
+        posPart = new THREE.Particle(mat);
+        
+        posPart.scale.x = posPart.scale.y = 10;
+        posPart.material.colo = 0xffffff;
+        scene.add(posPart);        
 
 				var matG = new THREE.ParticleCanvasMaterial( {
 					color: 0x00ff00,
@@ -165,6 +182,8 @@ THREE;
 				particle.position.x = mag;
 
 				particle.position = line.geometry.vertices[1];
+        
+        
 
 				var x = new THREE.Particle(matG);
 				x.position.x = 200;
@@ -182,8 +201,7 @@ THREE;
         drawGeo.vertices.push(new THREE.Vector3());
         drawGeo.vertices.push(new THREE.Vector3());
         
-				drawLine = new THREE.Line(drawGeo);
-
+				drawLine = new THREE.Line(drawGeo, new THREE.LineBasicMaterial({color: 0x77FF77}));
 				drawLine.material.linewidth = 10;        
         
 				// scene.add(line);
@@ -272,11 +290,14 @@ THREE;
   window.addEventListener("deviceorientation", function(){
     event.key = Session.get('mobKey');
     event.ctype = 'orient';
-    event.mag = tm;
-    if(event.key != null)
-        sendData(event);
+    event.mag = $("#magSlider").val();
+    event.stopped = Session.get('stop');
 
+    if(Session.get('stop') == 0)
+      Session.set('stop', 1);    
     
+    if(event.key != null)
+        sendData(event);    
   }, true);
   
   
@@ -306,7 +327,8 @@ $(function(){
       clearCanvas();
     }
     
-    console.log(message.ctype);
+    //console.log(message.ctype);
+    console.log(message.mag);
     console.log('type above');
   });
 })
@@ -318,6 +340,13 @@ Template.mobile.events = {
    }, 
    'click #clearBut': function(){
      sendData({ctype:'clear', key:Session.get('mobKey')});
-   }
-  
+   },
+  'click #stopBut': function(){
+    if(Session.get('stop') == -1)
+     Session.set('stop', 0);
+    else
+      Session.set('stop', -1);
+
+  }
+    
 }

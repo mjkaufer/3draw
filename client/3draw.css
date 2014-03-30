@@ -12,7 +12,8 @@ body{
 }
 
 #slide{
-    width: 50%;
+    width: 10%;
+    -webkit-appearance: slider-vertical;
 
 
 }
@@ -20,8 +21,23 @@ body{
     margin : 10px;
     
 }
+.button{
+    background-color: #fff;
+    border-radius : 5px;
+    display : inline-block;
+    color : black;
+    padding : 10;
+}
+#buttons{
+    /*position : absolute;
+    op : 250;
+    left : 250;*/
+    padding : 10;
+    background-color: #000;
+    border-radius: 5px;
+    display: inline-block;
 
-button{color:#000;}
+}
 
 .Center-Container {
   position: relative;

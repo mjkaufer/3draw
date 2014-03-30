@@ -10,9 +10,6 @@
   <!--<h1>Hello World!</h1>-->
   <!--{{greeting}}-->
   <!--<input type="button" value="Click" />-->
-  
- 
-    <p>Not-mobile</p>
     {{> computer}}
   
   </div>
@@ -26,21 +23,20 @@
 
 <template name = "mobile">
 <div class="container">
-<div class="Absolute-Center">
   
-  <form method="post" action="demoform.asp" id = "slide">
-  		<label for="points"></label>
-  		<input class="slide" type="range" min="-5" max="5" id="slider1">
-		</form>
+  <br> <br>
   
+  <input class="slide" type="range" min="-5" max="5" id="magSlider">
+  <input type="text" id="keyInp">
+  <div id = "buttons">
+    <button id="keyBut" class = "button">Update Key</button>
+    <button id="clearBut" class = "button">Clear Stuff</button>
+    <button id="stopBut" class = "button">Toggle Break</button>
+  </div>
   
-    
-     <input type="text" id="keyInp">
-  <button id="keyBut">Update Key</button>
-  <button id="clearBut">Clear Stuff</button>
+  <p>{{stopped}}</p>
     
 
-</div>
    
 </div>
 </template>
