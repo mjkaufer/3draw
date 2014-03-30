@@ -53,7 +53,7 @@ THREE;
 	  animate();  
 	  Session.set('allowMessage', false);
 	  console.log(scene);
-	  eval(scene);
+//	  eval(scene);
     })
             
             function parseEvent(e){
@@ -86,7 +86,7 @@ THREE;
          drawGeo.vertices.push(n);
          drawGeo.vertices.push(n);
 
-         drawLine = new THREE.Line(drawGeo, new THREE.LineBasicMaterial({color: 0x77FF77}));
+         drawLine = new THREE.Line(drawGeo, new THREE.LineBasicMaterial({color: 0x77FF77,  shading: THREE.SmoothShading}));
          drawLine.material.linewidth = 10;
          drawGroup.add(drawLine);
 
@@ -293,6 +293,8 @@ THREE;
     event.ctype = 'orient';
     event.mag = $("#magSlider").val();
     event.stopped = Session.get('stop');
+    $('#magInt').text(event.mag);
+
 
     if(Session.get('stop') == 0)
       Session.set('stop', 1);    
@@ -348,6 +350,9 @@ Template.mobile.events = {
     else
       Session.set('stop', -1);
 
+  },
+  'click #magBut': function(){
+    $('#magSlider').val(0);
   }
     
 }
