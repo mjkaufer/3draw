@@ -17,6 +17,10 @@ body{
 
 
 }
+
+#form-control{
+    width: 10px;
+}
 #keyInp{
     margin : 10px;
     
@@ -32,11 +36,16 @@ body{
     /*position : absolute;
     op : 250;
     left : 250;*/
+
     padding : 10;
     background-color: #000;
     border-radius: 5px;
-    display: inline-block;
+    display: inline;
 
+}
+
+label{
+   color: black;
 }
 
 .Center-Container {
@@ -53,3 +62,10 @@ body{
 }
 
 input{color:#000;}
+
+.center
+{
+margin-left:auto;
+margin-right:auto;
+width:70%;
+}

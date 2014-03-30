@@ -1,0 +1,59 @@
+bgcolor = #FFFFFF
+trackbg()
+  border-radius 5px
+  background-color bgcolor
+  box-shadow inset 1px 1px 0 1px lighten(bgcolor, 40%)
+
+track()
+  width 10px
+  height 240px
+  trackbg()
+
+thumbw = 32px
+thumbh = 72px
+
+thumb()
+  width thumbw
+  height thumbh
+  border 0
+  box-shadow -10px -5px 20px 0 #1a1a1a
+
+input[type='range']
+  margin-top 60px
+  writing-mode bt-lr
+  width 80px
+  height 240px
+  padding 0
+  @media screen and (-webkit-min-device-pixel-ratio:0)
+    -webkit-appearance none
+    -webkit-transform rotate(-90deg)
+    width 240px
+    height 10px
+    margin-top 160px
+    outline 0
+    trackbg()
+  &::-ms-track 
+    track()
+    border 0
+  &::-moz-range-track
+    track()
+    border 0
+  &::-webkit-slider-thumb
+    width thumbh
+    height thumbw
+    -webkit-appearance none
+    background-image -webkit-linear-gradient(left, lighten(black, 6%),
+      lighten(black, 18%) 4%,  lighten(black, 6%) 8%,  black 47%, lighten(black, 50%) 48%,  lighten(black, 50%) 52%, black 53%, lighten(black, 10%) 96%, lighten(black, 18%))
+    box-shadow 5px -10px 20px 0 #1a1a1a
+
+  &::-ms-thumb
+    thumb()
+    background-image -ms-linear-gradient(bottom, lighten(black, 6%),
+      lighten(black, 18%) 4%,  lighten(black, 6%) 8%,  black 47%, lighten(black, 50%) 48%,  lighten(black, 50%) 52%, black 53%, lighten(black, 10%) 96%, lighten(black, 18%))
+  &::-ms-tooltip
+    display none
+  &::-moz-range-thumb
+    thumb()
+    background-image -moz-linear-gradient(bottom, lighten(black, 6%),
+      lighten(black, 18%) 4%,  lighten(black, 6%) 8%,  black 47%, lighten(black, 50%) 48%,  lighten(black, 50%) 52%, black 53%, lighten(black, 10%) 96%, lighten(black, 18%))
+    border-radius 0
