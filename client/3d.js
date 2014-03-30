@@ -113,6 +113,10 @@ THREE;
             drawGeo.vertices.push( new THREE.Vector3() );
             drawGeo.vertices.push( new THREE.Vector3() );
             pos = new THREE.Vector3();
+            drawGroup.children = [];
+             drawLine = new THREE.Line(drawGeo, new THREE.LineBasicMaterial({color: 0x77FF77,  shading: THREE.SmoothShading}));
+             drawLine.material.linewidth = 10;
+             drawGroup.add(drawLine);
             //drawGroup.children = [];
             //drawLine = new THREE.Line(drawGeo);
             //drawGroup.add(drawLine);
@@ -298,7 +302,7 @@ THREE;
     event.ctype = 'orient';
     event.mag = $("#magSlider").val();
     event.stopped = Session.get('stop');
-    $('#magInt').text(event.mag);
+    $('#magInt').text("Magnitude: "+event.mag);
     
     lastCoords = {alpha:event.alpha,beta:event.beta};
     if(count)//first time
@@ -312,7 +316,6 @@ THREE;
     
     event.ralpha = event.alpha - relCoords.alpha;
     event.rbeta = event.beta - relCoords.beta;
-   
     //relative coords
     if(Session.get('stop') == 0)
       Session.set('stop', 1);    
