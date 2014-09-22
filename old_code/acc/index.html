@@ -1,0 +1,46 @@
+<html>
+<head>
+<script>
+newPosition = {x:0, y:0, z:0};
+oldPosition = {x:0, y:0, z:0};
+scale = 100;
+lastTime = new Date().getTime();
+window.onload = function(){
+//a = s * t^2
+//a / t(sec) ^2
+	window.addEventListener('')
+	window.addEventListener('devicemotion', function(e){
+		console.log(e);
+		var dtime = (e.timeStamp - lastTime) / 1000.0;
+		lastTime = e.timeStamp;
+
+		var data = e.acceleration;
+		for(var i in data){//x, y, z    {x:10, y:10403, z:19999}
+			position[i] += (data[i] * scale / (dtime * dtime));
+			document.getElementById(i).innerHTML = position[i];
+
+		}
+
+
+	});
+};
+function modifyText(){
+	var t1 = document.getElementById("t1");
+	t1.firstChild.nodeValue = "two";
+}
+
+var el = document.getElementById("outside");
+el.addEventListener("click", modifyText, false);
+
+</script>
+</head>
+<body>
+<table id = "outside">
+	<p><tr><td id = "t1">One</td></tr></p>
+	<p>X: <span id="x"></span></p>
+	<p>Y: <span id="y"></span></p>
+	<p>z: <span id="z"></span></p>
+</table>
+
+</body>
+</html>
